@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="content">
+        <h1>Calculator</h1>
+    </div>
+    
+    <div class="calculator">
+        <video autoplay loop muted plays-inline class="back"><source src="bgvid.mp4" type="video/mp4">        
+        </video>
+
+        <!-- Display -->
+        <div class="calculator-display" id="display">
+            <span class="display-input" id="display-input"></span>
+            <span class="display-result" id="display-result"></span>
+        </div>
+
+        <div class="calculator-buttons">
+            <!-- Memory -->
+            <button class="btn memory" id="mPlus" title="Memory Plus">M+</button>
+            <button class="btn memory" id="mMinus" title="Memory Minus">M-</button>
+            <button class="btn memory" id="mRecall" title="Memory Recall">MR</button>
+            <button class="btn memory" id="mClear" title="Memory Clear">MC</button>
+
+            <!-- Numbers -->
+            <button class="btn" data-value="1">1</button>
+            <button class="btn" data-value="2">2</button>
+            <button class="btn" data-value="3">3</button>
+            <button class="btn" data-value="4">4</button>
+            <button class="btn" data-value="5">5</button>
+            <button class="btn" data-value="6">6</button>
+            <button class="btn" data-value="7">7</button>
+            <button class="btn" data-value="8">8</button>
+            <button class="btn" data-value="9">9</button>
+            <button class="btn" data-value="0">0</button>
+            <button class="btn" data-value=".">.</button>
+            
+            <!-- Maths -->
+            <button class="btn operator" data-value="/">÷</button>
+            <button class="btn operator" data-value="*">×</button>
+            <button class="btn operator" data-value="-">-</button>
+            <button class="btn operator" data-value="+">+</button>
+            <button class="btn operator" id="percent" title="Percentage">%</button>
+            <button class="btn operator" id="sqrt" title="Square Root">√</button>
+
+            <!-- Clear -->
+            <button class="btn clear" data-value="Clear">Clear</button>
+        
+            <!-- Equals -->
+            <button class="btn equals" id="equals">=</button>
+
+        </div>
+        
+    </div>
+    
+    <!-- Sound Effect -->
+    <audio id="sound-memory" src="mr.mp3"></audio>
+    <audio id="sound-number" src="number.mp3"></audio>
+    <audio id="sound-operator" src="arth.mp3"></audio>
+    <audio id="sound-clear" src="clear.mp3"></audio>
+    <audio id="sound-equals" src="equals.mp3"></audio>
+    
+    <!-- JavaScript Code -->
+    <script src="script.js"></script>
+</body>
+</html>
